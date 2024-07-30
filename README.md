@@ -26,17 +26,17 @@ This project is the frontend part of a full-stack application providing real-tim
    cd flight-status-updates-frontend
 
 Project Structure
--src/components: Contains the React components for the application.
+-      src/components: Contains the React components for the application.
 -  HomePage.js: The main component that fetches and displays all flight information.
 -  SearchBar.js: The component for the search bar functionality.
 -  Flights.js: The component that displays the flight information in a table.
 -  FlightDetails.js: The component for viewing and editing flight details.
 -  NotificationHistory.js: The component for displaying the notification history.
--src/context: Contains the context for managing the global state.
+-      src/context: Contains the context for managing the global state.
 -  SearchContext.js: Context for managing search results and search state.
-src/App.js: The main component that sets up the application.
-src/index.js: The entry point for the React application.
-src/App.css: Contains global styles for the application.
-src/index.css: Contains base styles for the application.
+  -      src/App.js: The main component that sets up the application.
+-       src/index.js: The entry point for the React application.
+-      src/App.css: Contains global styles for the application.
+-      src/index.css: Contains base styles for the application.
 
-Please check the PPT added as well for the update on whole project
+Please check the PPT added as well for the update on whole project - Flight tracking App.pptx
