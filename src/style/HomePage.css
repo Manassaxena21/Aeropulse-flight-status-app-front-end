@@ -1,0 +1,213 @@
+.homepage {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background: linear-gradient(135deg, #ffffff, #f7f7f7); /* Subtle gradient background */
+    padding: 20px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 900px;
+    margin: 20px auto; /* Center the card horizontally */
+    overflow: hidden; /* Ensure rounded corners apply to all content */
+}
+
+  .flight-heading {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    color: rgb(255, 61, 61);
+    position: relative;
+    margin-left: 5%;
+  }
+  
+  .flight-heading::after {
+    content: '';
+    display: block;
+    width: 800px;
+    height: 4px;
+    background-color: rgb(59, 240, 5);
+    margin: 10px 200px 10px 0;
+  }
+  
+  .flight-table {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(153, 215, 240, 0.1);
+    font-family: 'Arial', sans-serif; /* Change the font to Arial or your preferred font */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners apply to all table parts */
+  }
+  
+  .flight-table th, .flight-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .flight-table th {
+    background-color: rgb(255, 61, 61);
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #fff; /* Thicker bottom border for header */
+  }
+  
+  .flight-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+  }
+  
+  .flight-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+  }
+  
+  .flight-table tr:hover {
+    background-color: rgb(59, 240, 5); /* Green background on hover */
+    color: white; /* White text on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .flight-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* Bottom-left rounded corner */
+  }
+  
+  .flight-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; /* Bottom-right rounded corner */
+  }
+  
+  .flight-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded edges for the details container */
+    background-color: #f1f1f1;
+    font-family: 'Arial', sans-serif; /* Change font */
+  }
+  
+  .flight-details h2 {
+    margin-top: 0;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background overlay */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #f51c1c;
+    padding: 15px 20px; /* Reduced padding */
+    width: 50%; /* Reduced width */
+    max-width: 500px; /* Reduced max width */
+    border: none; /* Removed border */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for a lifted effect */
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+    animation: slide-in 0.3s ease-out; /* Smooth slide-in animation */
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .close-button {
+    position: absolute;
+    top: -15px; /* Adjusted position for better alignment */
+    right: -15px;
+    background: #ff5c5c;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the close button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .close-button:hover {
+    background-color: #ff1c1c;
+  }
+  
+  .flight-details label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333333; /* Darker text color */
+  }
+  
+  .flight-details input, .flight-details select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* More rounded corners for input and dropdown */
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Increased font size for readability */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .flight-details input:focus, .flight-details select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 175, 233, 0.6); /* Enhanced focus shadow */
+  }
+  
+  .apply-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #28a745; /* Bootstrap green */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px; /* Increased font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .apply-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  .icon {
+    margin-right: 10px; /* Adjust spacing between icon and heading */
+    margin-bottom: -10px;
+  }
+  
+  .green-icon {
+    color: rgb(59, 240, 5);; /* Green color for the icon */
+  }

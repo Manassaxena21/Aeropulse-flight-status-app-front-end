@@ -1,0 +1,101 @@
+.notification-history {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Ensure the container doesn't overflow */
+    position: relative;
+  }
+  
+  .notification-card {
+    background: linear-gradient(135deg, #ffffff, #f7f7f7); /* Subtle gradient background */
+    padding: 20px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    width: 100%;
+    max-width: 900px;
+    height: 80vh; /* Set a height to the card */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    position: relative; /* Ensure the card remains fixed */
+    margin-left: auto;
+    margin-right: auto; /* Center the card horizontally */
+    margin-top: 100px;
+  }
+  
+  .notification-heading {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    color: rgb(255, 61, 61);
+    position: relative;
+    margin-left: 5%;
+  }
+  
+  .notification-heading::after {
+    content: '';
+    display: block;
+    width: 800px;
+    height: 4px;
+    background-color: rgb(59, 240, 5);
+    margin: 10px 200px 10px 0;
+  }
+  
+  .notification-table {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(153, 215, 240, 0.1);
+    font-family: 'Arial', sans-serif; /* Change the font to Arial or your preferred font */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners apply to all table parts */
+  }
+  
+  .notification-table th, .notification-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .notification-table th {
+    background-color: rgb(255, 61, 61);
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #fff; /* Thicker bottom border for header */
+  }
+  
+  .notification-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+  }
+  
+  .notification-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+  }
+  
+  .notification-table tr:hover {
+    background-color: rgb(59, 240, 5); /* Green background on hover */
+    color: white; /* White text on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .notification-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* Bottom-left rounded corner */
+  }
+  
+  .notification-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; /* Bottom-right rounded corner */
+  }
+  
+  .icon {
+    margin-right: 10px; /* Adjust spacing between icon and heading */
+    margin-bottom: -10px;
+  }
+  
+  .green-icon {
+    color: rgb(59, 240, 5);; /* Green color for the icon */
+  }
+  
