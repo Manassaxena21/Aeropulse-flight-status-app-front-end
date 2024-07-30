@@ -6,9 +6,9 @@ This project is the frontend part of a full-stack application providing real-tim
 
 - **React.js**: A JavaScript library for building user interfaces.
 - **CSS**: Cascading Style Sheets for styling the application.
-- **Axios**: A promise-based HTTP client for the browser and Node.js to make API requests.
 - **React Context API**: For state management to handle search functionality and flight data.
 - **Node.js**: JavaScript runtime for running the development server.
+- **React hooks** - For effect, state, and fetching of urls.
 
 ## Getting Started
 
